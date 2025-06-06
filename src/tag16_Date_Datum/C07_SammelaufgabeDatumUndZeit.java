@@ -21,7 +21,7 @@ public class C07_SammelaufgabeDatumUndZeit {
 
     static Scanner scanner = new Scanner(System.in);
     static Locale localeDE = Locale.GERMAN;
-    static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy ", localeDE);
+    static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy", localeDE);
 
 
     // 1)  Anzeige des heutigen Datums und des aktuellen Wochentags.
@@ -63,7 +63,7 @@ public class C07_SammelaufgabeDatumUndZeit {
         String eingabe = scanner.nextLine();
         try {
             LocalDate datum = LocalDate.parse(eingabe, formatter);
-            String wochentag = datum.getDayOfWeek().getDisplayName(TextStyle.FULL, localeDE);
+            String wochentag = datum.getDayOfWeek().getDisplayName(TextStyle.FULL,localeDE);
             System.out.println("Der Wochentag ist: " + wochentag);
         } catch (Exception e) {
             System.out.println("Ungültiges Datum. Bitte im Format TT.MM.JJJJ eingeben.");
