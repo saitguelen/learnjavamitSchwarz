@@ -43,4 +43,4 @@ Each unit focuses on a specific topic with practical examples – from simple to
 ## 🛠️ Verwendung / How to Use
 
 ```bash
-git clone https://github.com/saitguelen/java-ders-ornegi.git
+https://github.com/saitguelen/learnjavamitSchwarz.git
