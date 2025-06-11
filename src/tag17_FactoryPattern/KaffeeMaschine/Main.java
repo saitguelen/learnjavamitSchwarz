@@ -35,9 +35,12 @@ public class Main {
                 factory = new LatteFactory();
             } else if (input.startsWith("c")) {
                 factory = new CappuccinoFactory();
-            } else if (input.startsWith("m")) {
+            } else if (input.equals("milchkaffee")) {
                 factory = new MilchkaffeFactory();
-            } else {
+            }else if(input.equals("macchiato")){
+                factory = new MacchiatoFactory();
+            }
+            else {
                 System.out.println("Unbekannte Auswahl. Bitte erneut versuchen.\n");
                 continue;
             }

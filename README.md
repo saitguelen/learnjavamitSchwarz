@@ -6,6 +6,10 @@ Jede Einheit behandelt ein konkretes Thema mit praktischen Beispielen – von ei
 This repository contains Java lessons studied with our instructor.  
 Each unit focuses on a specific topic with practical examples – from simple to advanced level.
 
+
+![img.png](img.png)
+
+
 ---
 
 ## 🧩 Themenübersicht / Topics Overview
@@ -42,5 +46,5 @@ Each unit focuses on a specific topic with practical examples – from simple to
 
 ## 🛠️ Verwendung / How to Use
 
-```bash
+
 https://github.com/saitguelen/learnjavamitSchwarz.git
