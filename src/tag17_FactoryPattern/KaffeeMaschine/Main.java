@@ -9,7 +9,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.print("Welchen Kaffee möchtest du? (latte/cappuccino/Milchkaffe oder mit 'q' zum Beenden: ");
+            System.out.print("Welchen Kaffee möchtest du? (latte/cappuccino/Milchkaffe/turkisch oder mit 'q' zum Beenden: ");
             String input = scanner.nextLine().trim().toLowerCase();
 
             if (input.substring(0, 1).equalsIgnoreCase("q")) {
@@ -35,10 +35,12 @@ public class Main {
                 factory = new LatteFactory();
             } else if (input.startsWith("c")) {
                 factory = new CappuccinoFactory();
-            } else if (input.equals("milchkaffee")) {
+            } else if (input.startsWith("mi")) {
                 factory = new MilchkaffeFactory();
-            }else if(input.equals("macchiato")){
+            }else if(input.startsWith("ma")){
                 factory = new MacchiatoFactory();
+            }else if (input.startsWith("t")){
+                factory= new TurkischeKaffeeFactory();
             }
             else {
                 System.out.println("Unbekannte Auswahl. Bitte erneut versuchen.\n");
