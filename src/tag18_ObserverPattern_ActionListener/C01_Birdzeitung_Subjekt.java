@@ -15,13 +15,13 @@ Weil es über Änderungen in der Birdzeitung informiert wird.
 
 */
 
-public class C01_Birdzeitung extends Observable {// Wir erben von der Klasse Observable
+public class C01_Birdzeitung_Subjekt extends Observable {// Wir erben von der Klasse Observable
                                                     // Damit verfügt
                                                  // unsere Klasse Birdzeitung über alle Fähigkeiten der Klasse Observable,
                                                  // d.h. sie kann Beobachter-Observer verwalten und Benachrichtigungen an sie senden
     private String latestIssue; //Die neuste Ausgabe der Zeitung
 
-    public C01_Birdzeitung(String initialIssue) {
+    public C01_Birdzeitung_Subjekt(String initialIssue) {
         this.latestIssue = initialIssue;
         System.out.println("Birdzeitung mit Erstausgabe erstellt: " + initialIssue);
     }

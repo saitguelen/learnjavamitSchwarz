@@ -3,12 +3,12 @@ package tag18_ObserverPattern_ActionListener;
 public class C03_NewspaperApp {
     public static void main(String[] args) {
         // 1. Birdzeitung (Observable) erstellt Subjekt wird
-        C01_Birdzeitung birdzeitung = new C01_Birdzeitung("Vol. 1 - The First Flight");
+        C01_Birdzeitung_Subjekt birdzeitung = new C01_Birdzeitung_Subjekt("Vol. 1 - The First Flight");
 
         // 2. Zeitungsabo (Observer) Objekte erstellen
-        C02_Zeitungsabo abonement1 = new C02_Zeitungsabo("Sait");
-        C02_Zeitungsabo abonement2 = new C02_Zeitungsabo("Ayşe");
-        C02_Zeitungsabo abonement3 = new C02_Zeitungsabo("Mehmet");
+        C02_Zeitungsabo_Beobachter abonement1 = new C02_Zeitungsabo_Beobachter("Sait");
+        C02_Zeitungsabo_Beobachter abonement2 = new C02_Zeitungsabo_Beobachter("Ayşe");
+        C02_Zeitungsabo_Beobachter abonement3 = new C02_Zeitungsabo_Beobachter("Mehmet");
 
         // 3. Observer'ları Observable'a kaydet (Abonelikleri yap)  Beobachter in Observable speichern (Abonnements erstellen)
         birdzeitung.addObserver(abonement1); //  Sait hat die Zeitung abonniert

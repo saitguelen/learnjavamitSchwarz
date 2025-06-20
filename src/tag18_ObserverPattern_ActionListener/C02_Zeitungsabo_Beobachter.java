@@ -3,7 +3,7 @@ package tag18_ObserverPattern_ActionListener;
 import java.util.Observer;
 import java.util.Observable;
 
-public class C02_Zeitungsabo implements Observer {/*Dies bedeutet, dass unsere Zeitungsabo-Klasse ein Beobachter ist
+public class C02_Zeitungsabo_Beobachter implements Observer {/*Dies bedeutet, dass unsere Zeitungsabo-Klasse ein Beobachter ist
                                                         und die Methode update() bereitstellen muss..
                                                         Bu, Zeitungsabo sınıfımızın bir Gözlemci olduğunu ve
                                                         update() metodunu sağlamak zorunda olduğunu belirtir.*/
@@ -11,7 +11,7 @@ public class C02_Zeitungsabo implements Observer {/*Dies bedeutet, dass unsere Z
     private String subscriberName; // Name des Abos
     private String lastReceivedIssue; // Anzahl der zuletzt erhaltenen Zeitungen
 
-    public C02_Zeitungsabo(String subscriberName) {
+    public C02_Zeitungsabo_Beobachter(String subscriberName) {
         this.subscriberName = subscriberName;
         System.out.println("Zeitungsabo erstellt für: " + subscriberName);
     }
@@ -27,7 +27,7 @@ public class C02_Zeitungsabo implements Observer {/*Dies bedeutet, dass unsere Z
         wenn die Methode notifyObservers() der Klasse Birdzeitung aufgerufen wird.
         - o: Stellt das Observable-Objekt dar, das uns benachrichtigt
         - arg: die Informationen, die wir als Parameter an die Methode notifyObservers() senden (in diesem Fall der Name der neuen Zeitungsausgabe).*/
-        if (o instanceof C01_Birdzeitung) {
+        if (o instanceof C01_Birdzeitung_Subjekt) {
             String newIssue = (String) arg; //Konvertiert das eingehende Argument in String  Gelen argümanı String'e dönüştürürüz
             this.lastReceivedIssue = newIssue;
             System.out.println(subscriberName + " hat neue Ausgabe erhalten: " + newIssue);
